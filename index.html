@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>My Practice Website</title>
+</head>
+<body style="background-color: aqua;">
+    <header>
+        <div class="topnav">
+            <a class="active" href="#home"> Home </a>
+            
+
+        </div>
+        <div class="centered-search">
+            <input id="search"  type="text" placeholder="Search...">
+            <input type="radio" id="authorSearch" name="filter" value="author">
+            <label for="author">By Author</label><br>
+            <input type="radio" id="titleSearch" name="filter" value="title">
+            <label for="title">By Title</label><br>
+            <button id="submit" onclick="getSearch()">Submit</button>
+        </div>
+    </header>
+    <main>
+        <p>
+            David Rotger's Book Hub!
+        </p>
+        <div id="bookList"><ul>Search Results</ul></div>
+        
+    </main>
+    
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>
